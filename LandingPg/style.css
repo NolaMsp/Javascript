@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@300&family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 100px;
+  background-color: #fff;
+  z-index: 99;
+}
+
+header .brand{
+  display: flex;
+  align-items: center;
+ 
+}
+header h1 {
+  font-size: 24px;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+header .head-link ul {
+  display: flex;
+  gap: 0 10px;
+  list-style: none;
+}
+
+header .head-link ul li a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-weight: 500;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+header .head-link ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1a9bf7;
+  transition: 0.2s ease;
+}
+
+header .head-link ul li a:hover,
+header .head-link ul li a:hover::before {
+  color: aqua;
+  width: 100%;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.banner .left {
+  width: 500px;
+  color: black;
+}
+
+.banner .left h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.banner .left p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.banner .left button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 12px 20px;
+  background-color: #0883f7;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+.banner .right img {
+  width: 500px;
+}
+.content {
+  padding: 12px 40px;
+}
+
+.content h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b1b1b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.content .cards {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 0 20px;
+}
+
+.content .card {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.content .card .img img {
+  display: block;
+  width: 100%;
+}
+
+.content .card-body h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.content .card-body p {
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.contact {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.contact .tittle h1 {
+  font-size: 24px;
+  font-weight: 600px;
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.contact .form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.contact .form-input input,
+.contact .form-input textarea {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.notification-bar {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: none;
+        }
+
+        .notification-bar p {
+            margin: 0;
+        }
+/* ... (style.css lainnya) ... */
+
+header {
+    position: relative; /* Menetapkan posisi relatif pada elemen header */
+}
+
+#notificationBar {
+  background-color: #4CAF50; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  padding: 15px; /* Padding di dalam kotak notifikasi */
+  text-align: center; /* Pusatkan teks */
+  position: fixed; /* Mengatur posisi tetap */
+  top: 0; /* Atur ke bagian atas */
+  left: 0; /* Atur ke bagian kiri */
+  width: 100%; /* Lebar 100% */
+  z-index: 9999; /* Indeks z untuk memastikan ditampilkan di atas elemen lain */
+  display: none; /* Sembunyikan awalnya */
+}
+
+#notificationBar p {
+  margin: 0; /* Hapus margin dari paragraf */
+}
+
+
+
+/* Optional: Tambahkan margin atau padding ke header agar tidak tertutupi */
+header {
+    padding-top: 80px; /* Sesuaikan dengan tinggi elemen brand dan space yang diinginkan */
+}
+
+/* ... (style.css lainnya) ... */
